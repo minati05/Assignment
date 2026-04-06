@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    environment {
+        SERVICE_NAME = "order-service"
+        REPO_URL = "https://github.com/example/order-service"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo "Cloning ${REPO_URL}"
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Building ${SERVICE_NAME}"
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                echo "Building Docker image"
+            }
+        }
+
+        stage('Push to ECR') {
+            steps {
+                echo "Pushing image to ECR"
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying to Kubernetes"
+            }
+        }
+    }
+}
