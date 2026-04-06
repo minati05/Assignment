@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 </> Markdown
 # Deployment Portal Backend
 
@@ -23,3 +24,7 @@ Request:
 ## How to Run
 1. Run Spring Boot app(deplyoment-portal)
 2. Call API using Postman
+=======
+# Assignment
+Spring Boot User Metadata Service with Retry, Circuit Breaker, Metrics, and Logging
+>>>>>>> 5c369016070a0d4e03bd870615316cfcae5d6f17
